@@ -1,0 +1,4 @@
+Currently using random perceptron layers as placeholders just to test all other components.
+I will be adding a Manhattan-LSTM implementation to this folder that will actually handle all learning (soon ~Feb).
+
+- Eric

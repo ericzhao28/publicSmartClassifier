@@ -45,7 +45,7 @@ async.series([
     }
   ], 
   function(err, result){
-    console.log("Framework verification tests also available in unitTests/, including: coreNLPTest, mongoTest and semaforeTest");
+    console.log("Framework verification tests also available in unitTests/, including: coreNLPTest, mongoTest and semaforTest");
     process.exit();
   }
 );
