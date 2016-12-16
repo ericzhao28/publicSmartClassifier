@@ -1,0 +1,24 @@
+{
+  "name": "SmartClassifier",
+  "description": "Autonomous query classification system",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericzhao28/SmartClassifier"
+  },
+  "scripts": {
+    "start": "bash initiate.sh && node loadThoughts.js"
+  },
+  "main": "core.js",
+  "dependencies": {
+    "async": "^2.1.4",
+    "mongoose": "^4.7.2",
+    "path": "^0.12.7",
+    "prompt": "^1.0.0",
+    "python-shell": "^0.4.0",
+    "request": "^2.79.0",
+    "synaptic": "^1.0.8"
+  },
+  "devDependencies": {},
+  "license": "Copyright Eric Zhao, All Rights Reserved"
+}
