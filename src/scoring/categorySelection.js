@@ -43,3 +43,4 @@ function scoreCategories(scores, cb){
     cb(err, finalScore);
   })
 }
+

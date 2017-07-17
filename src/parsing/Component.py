@@ -151,3 +151,4 @@ class Component():
     for component in allComponents:
       if component.getIndex() == index:
         return component
+
