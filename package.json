@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericzhao28/SmartClassifier"
+    "url": "https://github.com/ericzhao28/PublicSmartClassifier"
   },
   "scripts": {
-    "start": "bash initiate.sh && node loadThoughts.js"
+    "start": "bash aux_scripts/initiate_auxillaries.sh && node src/memory/memory_interface.js"
   },
-  "main": "core.js",
+  "main": "src/main/core.js",
   "dependencies": {
     "async": "^2.1.4",
     "mongoose": "^4.7.2",

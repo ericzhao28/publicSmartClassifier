@@ -176,3 +176,4 @@ class Query():
           logging.info("New one " + str(dependency.getGovernor().getGloss()) + "\n");
           newDependencies = (self.longRangeRecursiveSearch(baseComponent, dependency.getGovernor().getWhereDependent(), newDependencies))
     return newDependencies
+

@@ -3,9 +3,10 @@ var path = require('path');
 var appDir = path.dirname(require.main.filename);
 
 // Interfaces with python scripts for nlp dependency/NER processing
-module.exports = function (queryString, debugging, cb){
-  var pyshell = new PythonShell('pyNodeReceptor.py', { scriptPath: appDir + '/parsingSystems/' } );
-  pyshell.send(queryString);
+var pyshell = new PythonShell('handler_interface.py', { scriptPath: appDir + '/parser/' } );
+
+module.exports = function (query, cb){
+  pyshell.send(query);
   i =  0;
   pyshell.on('message', function (message) {
     if ((i == 1)){

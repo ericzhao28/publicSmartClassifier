@@ -11,6 +11,7 @@ from sentences import *
 def _p(string1, string2):
     return '%s%s' % (string1, string2)
 
+
 def np_floatX(data):
     return np.asarray(data, dtype=config.floatX)
 
@@ -56,7 +57,7 @@ def generateLayer(neuralNetwork,nameOfLayer,size,sizeIn):
 # Generate neural network structure
 def createNeuralNetwork():
     neuralNetwork=OrderedDict()
-    print ("Creating neural network")
+    print("Creating neural network")
     neuralNetwork=generateLayer(neuralNetwork,'1lstm1_',50,300)
     neuralNetwork=generateLayer(neuralNetwork,'2lstm1_',50,300)
     return neuralNetwork
@@ -74,7 +75,7 @@ def getpl2(prevlayer,pre,mymask,used,rrng,size,optimizedNeuralNet):
                                         prefix=pre,
                                         mask=mymask,nhd=size)
     if used:
-        print "Added dropout"
+        print("Added dropout")
         proj = dropout_layer(proj, use_noise, rrng,0.5)
         
     return proj

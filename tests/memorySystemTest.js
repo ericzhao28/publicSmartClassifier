@@ -1,6 +1,6 @@
 var path = require('path');
 var appDir = path.dirname(require.main.filename);
-var thoughtCore = require(appDir + '/memory/thoughtCore');
+var thoughtCore = require(appDir + '/async_models/thoughtCore');
 var config = require(appDir + '/config');
 
 var mongoose = require('mongoose');

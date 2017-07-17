@@ -3,10 +3,10 @@ var path = require('path');
 var appDir = path.dirname(require.main.filename);
 
 // Interfaces with python scripts for neural net computation
-var pyshell = new PythonShell('pyNodeReceptor.py', { scriptPath: appDir + '/neuralN/' } );
+var pyshell = new PythonShell('handler_interface.py', { scriptPath: appDir + '/learner/' } );
 
-module.exports = function (queryString, debugging, cb){
-  pyshell.send(queryString);
+module.exports = function (query, cb){
+  pyshell.send(query);
   i =  0;
   pyshell.on('message', function (message) {
     if ((i == 1)){

@@ -8,10 +8,6 @@ sls=lstm("modelData/trainingCheckpoint.p",load=True,training=False, noInit=True)
 def scoreComparison(sentence1, sentence2):
   return sls.predict_similarity(sentence1, sentence2)
 
-@app.route("/")
-def hello():
-    return "<h1>Hi</h1>"
-
 @app.route("/compare")
 def compare():
   sentence1 = request.args.get('sentence1').lower()
