@@ -1,5 +1,10 @@
+# Ignore third-party frameworks and modules 
 senseInterface/sense2vec/*
 node_modules/*
-*.log
+
+# Ignore virtual environments
 venv/*
+
+# Ignore caches
 *.pyc
+*.log

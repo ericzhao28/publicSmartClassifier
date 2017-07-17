@@ -1,6 +1,6 @@
 var path = require('path');
 var appDir = path.dirname(require.main.filename);
-var ThoughtLinkMod = require(appDir + '/dbModels/ThoughtLink');
+var ThoughtLinkMod = require(appDir + '/db_models/ThoughtLink');
 var async = require('async');
 var ThoughtLinkObject = require(appDir + '/memory/ThoughtLinkObject');
 var nodeSenseVecHandler = require(appDir + '/handlers/sense2vecHandler');

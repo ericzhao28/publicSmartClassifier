@@ -1,8 +1,8 @@
 var path = require('path');
 var appDir = path.dirname(require.main.filename);
-var ThoughtMod = require(appDir + '/dbModels/Thought');
-var ThoughtLinkObjectMod = require(appDir + '/dbModels/ThoughtLinkObject');
-var ThoughtLinkMod = require(appDir + '/dbModels/ThoughtLink');
+var ThoughtMod = require(appDir + '/db_models/Thought');
+var ThoughtLinkObjectMod = require(appDir + '/db_models/ThoughtLinkObject');
+var ThoughtLinkMod = require(appDir + '/db_models/ThoughtLink');
 var Thought = require(appDir + '/memory/Thought');
 
 var async = require('async');

@@ -4,7 +4,7 @@ var async = require('async');
 var nlpProcessor = require(appDir + '/handlers/parsingHandler');
 var senseProcessor = require(appDir + '/handlers/sense2vecHandler');
 var ThoughtLink = require('./ThoughtLink');
-var ThoughtMod = require(appDir + '/dbModels/Thought');
+var ThoughtMod = require(appDir + '/db_models/Thought');
 
 // Thought
 module.exports = class Thought{

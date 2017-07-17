@@ -15,8 +15,6 @@ import sys
 sys.path.insert(0,'../')
 #from senseHelper import fetchSimReddit
 
-print "Loading word2vec"
-
 # Swap out for concept vectors
 word2vecModel = word2vec.Word2Vec.load_word2vec_format("auxData/globalWordModels.bin.gz",binary=False)
 
@@ -224,9 +222,9 @@ def expand(data):
 def sanitize(data):
     # mandatory
     finalDataset = []
-    for i in data: 
+    for i in data:
         if stringClean(i[0]) and stringClean(i[1]):
             finalDataset.append(i)
 
-    print "sanitization complete"
     return np.array(finalDataset)
+

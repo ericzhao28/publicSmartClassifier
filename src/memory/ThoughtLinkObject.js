@@ -1,7 +1,7 @@
 // ThoughtLinkObject is a fragment of a ThoughtLink, it is equivalent to a entity
 var path = require('path');
 var appDir = path.dirname(require.main.filename);
-var ThoughtLinkObjectMod = require(appDir + '/dbModels/ThoughtLinkObject');
+var ThoughtLinkObjectMod = require(appDir + '/db_models/ThoughtLinkObject');
 var sense2vec = require(appDir + '/handlers/sense2vecHandler');
 var async = require('async');
 
