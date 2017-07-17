@@ -2,3 +2,4 @@ senseInterface/sense2vec/*
 node_modules/*
 *.log
 venv/*
+*.pyc
