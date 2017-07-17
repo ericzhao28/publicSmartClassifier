@@ -1,6 +1,6 @@
-### This commit will not work. Please refer to commit `dd8ca0866005575e5b666fc32c0a5accf2782037` for a working version.
+### This repo is the development repo and is going through refactoring. If you are in the Whimmly organization, refer to the larger meta-project to find the main repository with a working branch. The working repo's development branch points to this repository.
 
-# SmartClassifier (under development)
+# SmartClassifier
 A novel query classification engine currently under development. We employ three primary inputs for our learning algorithms:
 * Word embedding dependencies, modified to track complete NER phrases and long-distance links
 * Framenet-style parsed structures
@@ -12,10 +12,10 @@ A Manhattan LSTM approach is used for learning. In this version, rudimentary per
 
 ## Instructions
 
-* Initiate external frameworks by calling `initiate.sh`
-* Verify frameworks are online by calling unitTests/ for Mongo, Semafor and CoreNLP
-* Verify the project works by calling `verifyProjectIntegrity.js`
-* Run `core.js`
+* Initiate external frameworks by calling `auxillary_scripts/initiate_auxillaries.sh`
+* Verify frameworks are online by calling `tests/` for Mongo, Semafor and CoreNLP
+* Verify the project works by calling `tests/verifyProjectIntegrity.js`
+* Run `src/main/core.js`
 
 ## Bugs and problems
 
@@ -27,7 +27,7 @@ A Manhattan LSTM approach is used for learning. In this version, rudimentary per
 Install all modules (`npm install`)
 Install all frameworks: MongoDB, Semafor, CoreNLP, Sense2vec. Update the locations of those frameworks in `initiate.sh`
 Install python reqs: 
-* `virtualenv -p /usr/bin/python3 venv --no-site-packages`
+* `virtualenv -p /usr/bin/python2 venv --no-site-packages`
 * `source venv/bin/activate`
 * `pip install -r requirements.txt`
 Replace the sample data in data/ with your own.
